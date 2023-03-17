@@ -11,7 +11,11 @@ Este repositorio de GitHub contiene un archivo de variables de entorno y un arch
 
 Antes de usar Docker Compose, debe crear un archivo `.env` en la raíz del directorio del proyecto y agregar las siguientes variables de entorno:
 
-`WG_HOST= # Dirección IP/DNS del servidor de Wireguard WG_PASSWORD= # Contraseña del servidor de Wireguard PH_WEBPASSWORD= # Contraseña para acceder a la interfaz web de Pihole DD_SUBDOMAINS= # Subdominios de DuckDNS separados por coma DD_TOKEN= # Token de DuckDNS`
+```WG_HOST= # Dirección IP/DNS del servidor de Wireguard 
+WG_PASSWORD= # Contraseña del servidor de Wireguard 
+PH_WEBPASSWORD= # Contraseña para acceder a la interfaz web de Pihole 
+DD_SUBDOMAINS= # Subdominios de DuckDNS separados por coma 
+DD_TOKEN= # Token de DuckDNS```
 
 ## Configuración de Docker Compose
 

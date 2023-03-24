@@ -17,6 +17,9 @@ services:
       # - WG_POST_UP=echo "Post Up" > /etc/wireguard/post-up.txt
       # - WG_PRE_DOWN=echo "Pre Down" > /etc/wireguard/pre-down.txt
       # - WG_POST_DOWN=echo "Post Down" > /etc/wireguard/post-down.txt
+    
+    depends_on:
+      - pihole
       
     image: weejewel/wg-easy
     container_name: wg-easy
@@ -59,6 +62,9 @@ services:
     networks:
       containers:
         ipv4_address: 172.21.0.5
+    
+    depends_on:
+      - duckdns
 
   nginx-proxy-manager:
     container_name: nginx-proxy-manager

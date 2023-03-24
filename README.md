@@ -64,6 +64,12 @@ Para más información, consulta la [documentación oficial de nginx-proxy-manag
 #### 🛑 Importante
 
 En ningún caso expongas los puertos DNS de pi-hole a internet, estos deben ser accesibles solo desde la maquina de docker o la red local. Configura tu firewall para bloquear estos puertos.
+
+##### Lista de tareas pendientes
+
+-  [ ] Sustituir nginx-proxy-manager por un servicio más ligero y simple.
+-  [ ] Agregar un asistente de instalación y configuración.
+
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Consulte el archivo [LICENSE](https://chat.openai.com/LICENSE) para obtener más información.
